@@ -1,0 +1,580 @@
+version: "3.1"
+
+nlu:
+
+
+- intent: greet
+  examples: |
+    - hey
+    - comment aller
+    - coucou
+    - hi
+    - slt
+
+- intent : assistance_technique
+  examples: |
+    - je veux parler avec l'assistant technique 
+    - comment appeler assistant technique
+    - donner numero assistant technique
+    - est-ce qu'il y a moyen de parler spécifiquement à l'assistant technique
+    - je souhaite discuter avec l'assistant technique
+    - est-il possible de parler directement à l'assistant technique ?
+    - j'ai un problème technique
+
+- intent : salutation 
+  examples : |
+    - bonjour
+    - salut
+    - bonsoir
+    
+   
+- intent : presenter_les_fonctionnalités
+  examples : |
+    - que presentez vous ?
+    - qu'est ce que vous avez ?
+    - qu'est ce que vous faites ? 
+    - Qu'est-ce que vous proposez ?
+    - Pourriez-vous me donner un aperçu de ce que vous présentez ?
+    - Quels sont vos produits ou services ?
+
+- intent : abonnement 
+  examples : |
+    - offres forfaits disponibles
+    - quelles options fournir
+    - donner details forfaits
+    - que presenter offres
+    - quelles offres que proposer 
+
+- intent: goodbye
+  examples: |
+    - by
+    - bye bye
+    - revoir
+    - bye
+    - A bientot
+    - bonne journée
+    - prochain
+    - bonne soirée
+    - plus tard
+
+- intent: affirmation
+  examples: |
+    - oui
+    - oui ,
+    - exactement
+    - évidemment
+    - absolument
+    - certainement
+    - bien entendre
+    
+- intent : confirmation
+  examples: |
+   - d'accord
+   - ok 
+   - bien sur
+   - bien 
+
+- intent : rien 
+  examples : |
+    - rien
+    - tout va bien
+    
+- intent: refuser
+  examples: |
+    - non
+    - pas vraiment
+    - non faux 
+    - Pas du tout
+    - Jamais
+    - Non pas vraiment
+    - impossible
+    - nn
+    - no 
+  
+
+- intent: merci
+  examples: |
+    - merci
+    - remercie
+    - merci beaucoup
+    - etre formidable
+    - merci, bye
+    - merci by 
+
+- intent : offre_internet
+  examples: |
+    - quelles sont les offres internet
+    - donner les options internet
+    - c'est quoi les options à offrir pour accéder au forfait internet
+    - comment activer un pack internet
+    - comment pouvoir faire offre internet
+    - besoin aide activer formule internet mobile 
+    - comment pouvoir accéder abonnement internet mobile
+    - comment pouvoir activer pack internet mobile
+    - activation pack internet
+    - devoir faire activer abonnement enternet
+    - donner code activer abonnement iternet
+    - comment pouvoir activer abonnement internet mobile
+    - interesser forfait internet mobile , pouvoir dire plus
+
+- intent : offre_hadra
+  examples: |
+   - coment pouvoir activer forfait {hadra}
+   - quoi offrir {hadra}
+   - donner informaiton forfait hadrer not
+   - quel opion abonnement hadra nat
+   - option hadrer neat
+   - donner informatic option hadrer next
+   - quel opition responsible {hadra}
+   - pouvoir donner détail opitonon offrir {hadra}
+   - intéresser {hadra} not pouvoir fournir infomartion different option proposer
+   - offre {hadra} net
+   - souscrir forfait {hadra} net
+   - coment pouvoir activer forfait {hadra} net
+   - quel codec activation park {hadra} net
+   - faire abonnement {hadra} net
+
+- intent : offre_facebook
+  examples: |
+    - quelles offre forfait facebook
+    - forfait facebook disponible
+    - option forfait facebook disponible
+    - abonement facebook
+    - faire forfait facbook
+    - souscrir forfait facebook 
+    - activer forfait facebook
+    - vouloir savoir offre forfait facebook
+   
+
+- regex : forfait
+  examples : |
+    - activer forfait 440MO
+    - souscire forfait 200 mo
+    - faire offre 500 MO
+
+- intent: activer_forfait_internet
+  examples : |
+    - activer forfait {internet} [50Mo](forfait) 
+    - quel kode saisir souscrir park {internet} mablie [200Mo](forfait)
+    - souscrir abonnement {internet} [1,1Go](forfait)
+    - interesse forfait {internet} [2.2 GO](forfait)
+    - souscrire forfait {internet} [6Go](forfait)
+    - comment activer pack {internet} [25GO](forfait)
+    - vouloir savoir comment activer forfait {internet} [2.2Go](forfait)
+    - proceder activation forfait {internet} [55Go](forfait) 
+    - veux opter offrir {internet} [10go](forfait)
+    - quel cod activation offrir {internet} [50 mo](forfait)
+    - coment fair souscrir formule {internet} [55 go](forfait)
+    - code devoir saisir forfait {internet} [10](forfait) GO
+    - activation offre {internet} [6go](forfait)
+    - code devoir saisir activer forfait {internet} [440mo](forfait)
+    - pouvoir souscrir forf {internet} [200mo](forfait)
+
+
+- intent : renouvellement_forfait 
+  examples: |
+    - pack internet [25Go](forfait) pouvoir être renouveler 
+    - mise jour offrir manuel automatique [200MO](forfait_ehdia)
+    - renouvellement forfait gérer manière manuel automatique
+    - renouvellement [700mo](forfait) manuelle automatique
+    - pouvoir renouveler abonnement internet [55GO](forfait)
+    - renouvellement pack faire manuellement automatiquement
+    - comment faire mettre jour forfait [500Mo], manuellement automatiquement
+    - avoir actualisation pack [25](forfait) 
+    - vouloir savoir si formule internet mobile renouvell manuellement
+    - forfait [440](forfait) renouv manuel ou auto
+    - forfait [25go](forfait_ehdia) renouvlable  nn 
+    - forfait [50mo](forfait) renouvelable ou non
+    - comment pouvoir renouveler forfait [440mo](forfait) 
+    - renouvellement forfait [1,1Go](forfait) manuelle atuomatique
+    - renouvellement forfait [2,2go](forfait) manuel auto
+    - est forfait [6Go](forfait) renouvel manuel ou auto
+    - savoir faire renouvellement forf [10go](forfait) manuel ou auto
+  
+   
+- intent: prix_forfait_internet
+  examples: |
+    - combien coute forfait {internet} [440Mo](forfait) 
+    - quel montant forfait {internet} [440mo](forfait)
+    - quel prix offrir {internet} [50Mo](forfait)
+    - quel some abonnement {internet} [50](forfait) mo
+    - vouloir savoir prix paayer forfait {internet} [6GO](forfait)
+    - quel total forfait {internet} [10go](forfait)
+    - prix forfait devoir  payer {internet} [50](forfait)
+    - savoir prix forfait {internet} [200](forfait) Mo
+    - cout forfait {internet} [55](forfait) Go
+    - combien devoir donner acheter forfait {internet} mobil [2.2](forfait) go
+    - debourser somme obtenir forfait {internet} [25Go](forfait)
+    
+   
+- intent : validité_forfait
+  examples: |
+    - quel validite offre  
+    - combien temp formule valid [50Mo](forfait) 
+    - pendant combien temps pouvoir utiliser abonnement
+    - quel durée validiter park [50MO](forfait) 
+    - jusqu quand forfait valable {internet} [200mo](forfait)  
+    - validité forfait 
+    - duree forfait
+    - duree offre
+    - combien dure ce forf
+    - validiter abonnement {facebook} [500mo](forfait)
+    - duree forfait {ehdia} [440Mo](forfait) 
+    - combien temp formule valid [6Go](forfait) 
+    - pendant combien temps puis utiliser abonnement [1.1go](forfait) 
+    - combien temps forfait disponible [25 go](forfait)
+    - combien durer pack {internet} [55](forfait) GO
+    - combien temp rester valable forfait [440Mo](forfait_ehdia)
+    - forfait {ehdia} [2,2 go](forfait) valable combien jour
+    - quelle dureé abonnement {internet} [10Go](forfait)
+    - temps forfait [25GO](forfait)
+    - combien reste vaalable pack {facebook} [700](forfait)
+    - validité pack [200MO](forfait_ehdia)
+    - temps offre [10go](forfait_ehdia)
+    - duree offre [6 go](forfait_ehdia)
+    - combien rest du temps le forf internet [200mo](forfait)
+    - validité forfait {facebook} [500mo](forfait)
+    
+
+- intent : activer_forfait_facebook 
+  examples : |
+     - offre forfait {facebook} [500mo](forfait) disponible 
+     - activer forfait {facebook} [500](forfait)
+     - acceder forfait {facebook} [500Mo](forfait)
+     - faire forfait facbok [500MO](forfait)
+     - code activer facbook [500](forfait)
+     - comment pouvoir inscrire forfait {facebook} [500](forfait)
+     - vouloir opter code activation abonnement {facebook} [500 mo]
+     - interesse forfait {facebook} [700mo](forfait)
+     - etape faire {facebook} [700Mo](forfait)
+     - souscrire forfait {facebook} [700 Mo](forfait)
+     - vouloir connaitre code activation forfait {facebook} [500](forfait) 
+     - code activation  forfait {facebook} [500 MO](forfait)
+     - veux savoir quelles étapes suivre activer forfait facebook [700mo]
+
+
+- intent : prix_forfait_facebook
+  examples : |
+    - prix abonnement {facebook} [500](forfait)
+    - priw forfait {facebok} [700](forfait)
+    - quel valeur devoir payer acheter forfait {facebook} [500Mo](forfait)
+    - quel prix park {facebook} [700mo](forfait)
+    - souhaite connaître coût player park {facebook} [700](forfait)
+    - quel coût offrir {facebook} [700](forfait)
+    - vouloir savoir combien devoir débourser forfait {facebok} [700](forfait)
+    - quel some payer park {facebok} [500](forfait)
+    - souhaite connaître coût forfait {facebook} [500](forfait)
+    - prix forfait {facebok} [500](forfait) mo
+    - vouloir savoir prix payer formul {facebook} [500Mo](forfait)
+    - prix park {facebok} [500](forfait)
+
+
+
+- intent : activer_forfait_hadra
+  examples : |
+   - souhaite souscrir forfait {hadra} [350Mo](forfait) 15min
+   - veux activer forfait {hadra} [100 mo](forfait) 10 min
+   - activation forfait {hadranet} [100](forfait)  mo
+   - quel opération activation forfait {hadranet} [100MO](forfait) 10min
+   - comment activer optin abonnement {hadra} [350MO](forfait) 
+   - quel codec activation abonnement internert [350mo](forfait) 
+   - coment activer opition 15min  [350](forfait) 
+   - quel étape suivre abonner offre {hadranet} [350mo](forfait) 
+   - coment activer opitonon 15 min [1 go](forfait) 
+   - activation forfait [1Go](forfait) 15 min
+   - activer park  [1GO](forfait) 15min
+   - veux opter offrir [2.5Go](forfait) 20 minutes
+   - quel coad activation formul {hadra} 20 min [2.5](forfait)
+   - vouloir connaitre code d'activation {hadranet} [100Mo]
+
+
+
+- intent : prix_forfait_hadra
+  examples : |
+    - prix option {hadra} 15min [350Mo](forfait)
+    - quel cout forfait {hadra} [350mo](forfait)
+    - quel somme payer offre forfait hadra net 15 min [350 mo](forfait)
+    - souhaite connaitre montant payer forfait {hadranet} [100 mo](forfait)
+    - quel coût forfait {hadra} [1Go](forfait) 15 min
+    - vouloir savoir combien devoir débourser formule {hadra} net [1](forfait)
+    - quel some player abonnement {hadranet} [1go](forfait) 15 min
+    - quel prix forfait {hadra} [2.5Go](forfait)
+    - prix forfait devoir payer {hadranet} [2.5](forfait)
+    - savoir prix forfait {hadra} [2.5go](forfait) 20 min
+    - prix forfait 20min [2.5 go](forfait)
+   
+- intent : offre_ehdia
+  examples: |
+    - quelles sont vos offres {ehdia} 
+    - offres forfaits {ehdia}
+    - options {ehdia}
+    - quoi options offrir {ehdia}
+    - forfait {ehdia}
+    - forfait {ehdia} proposer actuellement
+    - offre forfait {ehdia} NET disponible
+    - expliquer offre {ehdia}
+    - {ehdia} NET
+    - savoir forfait {ehdia} disponible
+    - forfait {ehdia} proposer
+    - vouloir information forfait interent {ehdia} nedd
+    - aimer savoir plus park intenet proposer {ehdia} not
+    - parler peu formule {ehdia} neat
+    - quoi forfait {ehdia} neat
+    - pouvoir expliquer coment transférer forfait membre famille ami 
+    - vouloir obtenir information park Internet offrir {ehdia} nedd
+    - transférer abonnement inter
+    - vouloir transférer forfait
+   
+
+
+- intent : activer_forfait_ehdia
+  examples: |
+   - activer forfait {ehdia} net [200Mo](forfait_ehdia)
+   - faire forfait {ehdia} [200mo](forfait_ehdia)
+   - coment pouvoir transférer abonnement [200 mo](forfait_ehdia) vers proche
+   - vouloir opter pack forfait {ehdia} net [25Go](forfait_ehdia)
+   - activation forfait {ehdia} [440MO](forfait_ehdia)
+   - quel opération activation forfait {ehdia} [10go](forfait_ehdia)
+   - quel étape suivre transférer park proche [440](forfait_ehdia) Mo
+   - code activation forfait {ehdia} net [25](forfait_ehdia)
+   - coment transférer offrir {ehdia} [2,2Go](forfait_ehdia) 
+   - souscrire forfait {ehdia} [6go](forfait_ehdia) GO
+   - inscrire forfait {ehdianet} [2,2](forfait_ehdia) go
+   - faire activer forfait {ehdianet} [1,1](forfait_ehdia)
+   - donner comment activer forfait {ehdia} [10Go](forfait_ehdia)
+   - comment inscrir offre {ehdia} [440](forfait_ehdia)
+   - code activation option {ehdia} [25](forfait_ehdia)
+   - code taper obtenir forfait {ehdianet} [440Mo](forfait_ehdia)
+
+
+- intent : prix_forfait_ehdia
+  examples: |
+    - quelle somme devoir payer forfait {ehdia} net [200Mo](forfait_ehdia) 
+    - souhaite connaître cout forfait {ehdia} [200mo](forfait_ehdia)
+    - pouvoir dire combien devoir payer forfait {ehdia} [200 MO](forfait_ehdia) mo
+    - vouloir savoir combien devoir débourser formule {ehdia} [440Mo](forfait_ehdia)
+    - quel some player abonnement {ehdia} [440 mo](forfait_ehdia)
+    - souhaite connaître coût park {ehdia} [440MO](forfait_ehdia)
+    - pouvoir dire combien devoir player abonnement {ehdia}  [1,1Go](forfait_ehdia)
+    - combien devoir payer park {ehdia} [1.1go](forfait_ehdia)
+    - souhaite connaitre montant payer forfait {ehdia} [25go](forfait_ehdia)
+    - montant devoir payer {ehdia} [2.2Go](forfait_ehdia)
+    - prix total {ehdia} [6go](forfait_ehdia)
+    - some pack {ehdia} [6GO](forfait_ehdia)
+    - quel prix devoir payer obtenir abonnement forfait {ehdia} [10go](forfait_ehdia)
+    - somme total donner forfait {ehdia} [10](forfait_ehdia)
+    - vouloir savoir prix devoir payer forfait {ehdia} net [25Go](forfait_ehdia)
+
+
+- intent : inform 
+  examples : |
+    - forfait {ehdia} [25go](forfait_ehdia)
+    - {ehdia} net [25](forfait_ehdia)
+    - forfait {ehdianet} [200mo](forfait_ehdia)
+    - {ehdia} [200 mo](forfait_ehdia) 
+    - forfait {ehdia} [6 go](forfait_ehdia)
+    - forf {ehdianet} [440 MO](forfait_ehdia)
+    - {ehdia} [440](forfait_ehdia)
+    - {ehdianet} [10Go](forfait_ehdia)
+    - pavk {ehdia} [6](forfait_ehdia)
+    - pack {ehdia} [10](forfait_ehdia)
+    
+
+
+- intent : inform_facebook
+  examples : |
+    - pack {facebook} [500mo](forfait)
+    - forf {facebook} [500](forfait)
+    - {facebook} [700Mo](forfait)
+    - forfait {facebook} [700](forfait)
+    - offre {facebook} [700MO](forfait)
+    - abonnement {facebook} [500](forfait)
+    - forfait facebook [500mo](forfait)
+
+- intent : connaitre_prix
+  examples : |
+    - combien devoir donner prix
+    - cout forfait
+    - quel prix devoir payer
+    - somme devoir payer
+    - combien elever coût forfait 
+    - Pouvoir indiquer prix forfait
+    - combien coûte offre
+    - quel prix 
+    - combien debourser forfait
+    - quel cout forfait
+    - quel somme payer offre
+    - quel somme abonnement
+    - combien devoir payer forfait internet
+    - savoir somme payer forfait
+    - combien coute offre
+    - souhaite connaitre montant payer forfait
+    - quelle somme payer forfait 
+    - souhaite connaître cout forfait
+    - pouvoir dire combien devoir payer forfait
+    - montant que devoir payer
+
+- intent : inform_hadra
+  examples : |
+    - {hadra} [100mo](forfait) 
+    - {hadra} [2,5go](forfait) 
+    - offre {hadra} [100](forfait)
+    - pack {hadra} [350Mo](forfait)
+    - forfait {hadra} [350](forfait)
+    - {hadra} [2,5Go](forfait)
+    - offre {hadra} [1go](forfait)
+    - abonnement {hadra} [1](forfait)
+    - {hadra} [100](forfait)
+    - {hadra} [2,5](forfait)
+    - abonement {hadra} [350](forfait)
+
+
+- intent : inform_inter
+  examples : |
+    - abonnement {internet} [200Mo](forfait)
+    - {internet} [200mo](forfait)
+    - forf {internet} [200](forfait)
+    - offre [55](forfait)
+    - forfait iternet [50mo](forfait)
+    - offre [50](forfait)
+    - forfait iternet [50](forfait)
+    - {internet} [440](forfait) 
+    - forf {internet} [1.1Go](forfait)
+    - forfait iternet [2.2go](forfait)
+    - forf {internet}  [6go](forfait)
+    - {internet} [6](forfait)
+    - offre {internet} [6](forfait)
+    - forfait iternet [10GO](forfait)
+    - forf {internet}  [25](forfait)
+    - {internet} [25go](forfait)
+    - offre {internet}  [25](forfait)
+    - forf {internet} [55go](forfait)
+    - prix forf {internet} [1,1Go](forfait)
+
+  
+
+
+
+- intent : statut_offre
+  examples : |
+    - sim deja activer
+    - puce cours utilisation
+    - comment puis savoir si sim actif
+    - sim avoir activer
+    - comment savoir [statut](type_request) abonnement 
+    - aimer savoir si puce cours utilisation
+    - pouvoir utiliser puce bien encore actif
+    - pouvoir confirmer carte sim activer
+    - comment puis vérifier [statut](type_request) formule
+    - [statut](type_request)
+    
+
+
+    
+
+- intent : demander_forfait_actuel
+  examples : |
+    - pouvoir dire quel offre [actuel](type_request)
+    - comment puis savoir quel offre [actuel](type_request)
+    - quel pack [actuel](type_request) utilis 
+    - aimer savoir quel forfait [actuel](type_request)
+    - pouvoir donner détail forfait [actuel](type_request)
+    - quel formule [actuel](type_request)
+    - comment puis trouver information offre [actuel](type_request)
+    - offre [actuel](type_request)
+  
+
+- intent : numero_telephone_client
+  examples : |
+    - 93383327
+    - 93335392
+    - 93348138
+    - 93375654
+    - 92218033
+ 
+- intent : code_verification 
+  examples : |
+    - 9a9f3a
+    - 5v4b2c
+    - 0o5b6v
+    - s0c4t8
+    - 7a4d1p
+    - 874152
+    - 412351
+    - abfdcv
+    - paslfx
+    - qsw413
+    - awb892
+    - 578abc
+    - 745ckj
+    - azzwx7
+    - sqghk6
+    - dkjv91
+    - monh88
+    - xxs412
+    - wwww74
+    - aqsdd1
+    - zzxx21
+    - 7ass4q
+    - 88aa41
+    - 62xc6v
+    - sq71vc
+    - op7vcx
+    - 9dfkhb
+    - 8as55f
+    - sqsc1x
+    - 9874kj
+
+- intent : informations_sim
+  examples : |
+    - quelles sont les informations de ma carte SIM ?
+    - donner moi les informations de ma puce 
+    - je veux acceder aux données de mon SIM
+    - c'est quoi les configutations de ma carte sim
+    - quelles sont les options disponibles sur ma puce télécom ?
+    - peux-tu me dire les caractéristiques de ma carte SIM ?
+    - j'aimerais connaître les détails de ma carte sim, est-ce possible ?
+    - donner moi les détails sur ma puce telecom 
+    - je veux consulter les info d'un autre compte
+    - obtenir les info d'un autre puce 
+    
+- intent : consulter_solde
+  examples : |
+    - quelle est mon [solde](type_request) ?
+    - [solde](type_request) 
+    - verifier [solde](type_request) 
+    - consulter [solde](type_request) telephone
+    - je voudrais savoir le montant qu'il me reste à dépenser
+    - pouvez-vous m'indiquer le [solde](type_request) de mon telephone
+    - j'aimerais savoir s'il me reste assez d'argent dans mon telephone
+    - [solde](type_request) telephone
+
+- intent : suivi_bonus
+  examples : |
+    - je veux consulter mon [bonus](type_request) 
+    - est ce qu'il y'a de [bonus](type_request) dans mon telephone ?
+    - j'aimerais savoir si j'ai des [bonus](type_request) sur mon compte, comment puis-je le vérifier ?
+    - pouvez-vous m'indiquer si j'ai reçu un [bonus](type_request) récemment ?
+    - je souhaite vérifier si j'ai des [bonus](type_request) disponibles dans mon compte, comment faire ?
+    - est-ce que je peux connaître les détails de mon [bonus](type_request) actuel sur mon compte ?
+    - est-ce que je peux connaître le montant de mon [bonus](type_request) actuel ?
+    - combien avoir [bonus](type_request)  ?
+
+- intent : volume_data 
+  examples : |
+    - combien j'avais comme [volume](type_request) data 
+    - [volume](type_request) data
+    - combien reste de Mo pour mon forfait
+    - j'aimerais connaître le [volume](type_request) de données utilisé sur mon forfait mobile.
+    - comment puis-je savoir combien de [volume](type_request) de données il me reste à utiliser sur mon forfait mobile ?
+    - combien de données ai-je utilisées jusqu'à présent ?
+    - je souhaite savoir combien de mégaoctets j'avais.
+
+- intent : out_of_scope 
+  examples : |
+    -  1 + 1  ?
+    - j'ai rien à faire
+    - je suis malade
+    - bref
+    - besoin service 
+    - assistance technique 

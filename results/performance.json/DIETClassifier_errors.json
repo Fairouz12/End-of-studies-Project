@@ -1,0 +1,363 @@
+[
+  {
+    "text": "code devoir saisir forfait {internet} 10 GO",
+    "entities": [
+      {
+        "start": 38,
+        "end": 40,
+        "value": "10",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 38,
+        "end": 43,
+        "confidence_entity": 0.4932391941547394,
+        "value": "10 GO",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "quel some abonnement {internet} 50 mo",
+    "entities": [
+      {
+        "start": 32,
+        "end": 34,
+        "value": "50",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 32,
+        "end": 37,
+        "confidence_entity": 0.4965068995952606,
+        "value": "50 mo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "combien durer pack 55 GO",
+    "entities": [
+      {
+        "start": 19,
+        "end": 21,
+        "value": "55",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 19,
+        "end": 24,
+        "confidence_entity": 0.48027077317237854,
+        "value": "55 GO",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "forfait {ehdia} 2,2 go valable combien jour",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "2,2 go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 16,
+        "end": 22,
+        "confidence_entity": 0.6060377955436707,
+        "value": "2,2 go",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "duree offre 6 go",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "6 go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 12,
+        "end": 16,
+        "confidence_entity": 0.5610999464988708,
+        "value": "6 go",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "vouloir opter abonnement {facebook} [500 mo]",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 41,
+        "end": 43,
+        "confidence_entity": 0.7086248397827148,
+        "value": "mo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "veux activer forfait {hadra} 100 mo 10 min",
+    "entities": [
+      {
+        "start": 29,
+        "end": 35,
+        "value": "100 mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 33,
+        "end": 35,
+        "confidence_entity": 0.7832376956939697,
+        "value": "mo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "activation forfait {hadranet} 100  mo",
+    "entities": [
+      {
+        "start": 30,
+        "end": 33,
+        "value": "100",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.5174013376235962,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "forfait",
+        "start": 35,
+        "end": 37,
+        "confidence_entity": 0.7647628784179688,
+        "value": "mo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "coment activer opitonon 15 min 1 go",
+    "entities": [
+      {
+        "start": 31,
+        "end": 35,
+        "value": "1 go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 24,
+        "end": 26,
+        "confidence_entity": 0.5037911534309387,
+        "value": "15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "forfait",
+        "start": 33,
+        "end": 35,
+        "confidence_entity": 0.7282700538635254,
+        "value": "go",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "quel somme payer offre forfait hadra net 15 min 350 mo",
+    "entities": [
+      {
+        "start": 48,
+        "end": 54,
+        "value": "350 mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 41,
+        "end": 43,
+        "confidence_entity": 0.496859073638916,
+        "value": "15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "forfait",
+        "start": 48,
+        "end": 54,
+        "confidence_entity": 0.5216406583786011,
+        "value": "350 mo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "quel étape suivre transférer park proche 440 Mo",
+    "entities": [
+      {
+        "start": 41,
+        "end": 44,
+        "value": "440",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 41,
+        "end": 47,
+        "confidence_entity": 0.5653277039527893,
+        "value": "440 Mo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "souscrire forfait {ehdia} 6go GO",
+    "entities": [
+      {
+        "start": 26,
+        "end": 29,
+        "value": "6go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 26,
+        "end": 32,
+        "confidence_entity": 0.6192407608032227,
+        "value": "6go GO",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "inscrire forfait {ehdianet} 2,2 go",
+    "entities": [
+      {
+        "start": 28,
+        "end": 31,
+        "value": "2,2",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.4079340100288391,
+        "value": "2,2 go",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "prix forfait {ehdia} net 25 go",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 25,
+        "end": 30,
+        "confidence_entity": 0.625725269317627,
+        "value": "25 go",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ehdianet 440Mo",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.7850804328918457,
+        "value": "440Mo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ehdianet 25Go",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.7215889096260071,
+        "value": "25Go",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "est-ce que je peux connaître le montant de mon bonus actuel ?",
+    "entities": [
+      {
+        "start": 47,
+        "end": 52,
+        "value": "bonus",
+        "entity": "type_request"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type_request",
+        "start": 47,
+        "end": 52,
+        "confidence_entity": 0.9974591135978699,
+        "value": "bonus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "type_request",
+        "start": 53,
+        "end": 59,
+        "confidence_entity": 0.5026323795318604,
+        "value": "actuel",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+version: "3.1"
+rules:
+- rule: Say "bonjour" anytime
+  steps:
+  - intent : greet
+  - action : action_greet
+  - action : action_listen
+
+- rule : say bonjour 
+  steps : 
+  - intent : salutation
+  - action : utter_salutation
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say Derien anytime the user says merci
+  steps:
+  - intent: merci
+  - action: utter_merci
+
+- rule : say 'aide' anytime the user says non
+  steps:
+  - intent : refuser
+  - action :  utter_aide
+ 
+- rule : say 'question' anytime the user says oui 
+  steps : 
+  - intent : affirmation
+  - action : utter_question
+
+- rule : say 'ok' anytime the user says oui 
+  steps : 
+  - intent : confirmation
+  - action : utter_confirmation
+
+- rule : say "parfait" anytime the user say rien
+  steps:
+  - intent : rien
+  - action : utter_rien
+
+##################################
+- rule: action_forfait_price_without_type
+  steps:
+   - intent : connaitre_prix
+   - action : utter_ask_forfait_type
+
+
+
+- rule: action_forfait_internet_price
+  steps:
+  - intent : inform_inter
+  - action : get_forfait
+  - action: get_price
+ 
+
+- rule: action_forfait_ehdia_price_
+  steps: 
+  - intent : inform
+  - action : get_forfait_ehdia
+  - action: get_price_ehdia
+  - action : utter_prix_forfait_ehdia
+
+
+- rule: action_forfait_facebook
+  steps: 
+  - intent : inform_facebook
+  - action : get_forfait
+  - action: get_price
+ 
+
+
+- rule: action_forfait_hadra
+  steps: 
+  - intent : inform_hadra
+  - action: get_forfait
+  - action : get_duree
+  - action: get_price
+  
+- rule : abonnement
+  steps : 
+  - intent : abonnement
+  - action : utter_abonnement
+
+
+- rule : message illogique
+  steps : 
+  - intent : nlu_fallback
+  - action : utter_default
+  - action : action_default
+

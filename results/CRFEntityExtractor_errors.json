@@ -1,0 +1,1344 @@
+[
+  {
+    "text": "interesse forfait {internet} 2.2 GO",
+    "entities": [
+      {
+        "start": 29,
+        "end": 35,
+        "value": "2.2 GO",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.9353365027424672,
+        "value": "2.2",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "quel some abonnement {internet} 50 mo",
+    "entities": [
+      {
+        "start": 32,
+        "end": 34,
+        "value": "50",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 32,
+        "end": 37,
+        "confidence_entity": 0.8243924433138811,
+        "value": "50 mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "combien devoir payer park {ehdia} 1.1go",
+    "entities": [
+      {
+        "start": 34,
+        "end": 39,
+        "value": "1.1go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 34,
+        "end": 39,
+        "confidence_entity": 0.8923002949977608,
+        "value": "1.1go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "abonnement {internet} 200Mo",
+    "entities": [
+      {
+        "start": 22,
+        "end": 27,
+        "value": "200Mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.6426113673121033,
+        "value": "200Mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "{internet} 440",
+    "entities": [
+      {
+        "start": 11,
+        "end": 14,
+        "value": "440",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.7740967695109289,
+        "value": "440",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "code devoir saisir activer forfait {internet} 440mo",
+    "entities": [
+      {
+        "start": 46,
+        "end": 51,
+        "value": "440mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 46,
+        "end": 51,
+        "confidence_entity": 0.6664544668661494,
+        "value": "440mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "savoir prix forfait {internet} 200 Mo",
+    "entities": [
+      {
+        "start": 31,
+        "end": 34,
+        "value": "200",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 31,
+        "end": 37,
+        "confidence_entity": 0.9121328099369587,
+        "value": "200 Mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "combien temps forfait disponible  25 go",
+    "entities": [
+      {
+        "start": 34,
+        "end": 39,
+        "value": "25 go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 34,
+        "end": 36,
+        "confidence_entity": 0.6233771149376276,
+        "value": "25",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "souscrire forfait {facebook} 700 Mo",
+    "entities": [
+      {
+        "start": 29,
+        "end": 35,
+        "value": "700 Mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.8240373923864016,
+        "value": "700",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "quel somme payer offre forfait hadra net 15 min 350 mo",
+    "entities": [
+      {
+        "start": 48,
+        "end": 54,
+        "value": "350 mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "comment inscrir offre {ehdia} 440",
+    "entities": [
+      {
+        "start": 30,
+        "end": 33,
+        "value": "440",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.4851393919170665,
+        "value": "440",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "code activation option {ehdia} 25",
+    "entities": [
+      {
+        "start": 31,
+        "end": 33,
+        "value": "25",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 31,
+        "end": 33,
+        "confidence_entity": 0.8718780705849057,
+        "value": "25",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "{ehdia} 25",
+    "entities": [
+      {
+        "start": 8,
+        "end": 10,
+        "value": "25",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 8,
+        "end": 10,
+        "confidence_entity": 0.8718780712082986,
+        "value": "25",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "{internet} 200mo",
+    "entities": [
+      {
+        "start": 11,
+        "end": 16,
+        "value": "200mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 11,
+        "end": 16,
+        "confidence_entity": 0.5513320246962007,
+        "value": "200mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "debourser somme obtenir forfait {internet} 25Go",
+    "entities": [
+      {
+        "start": 43,
+        "end": 47,
+        "value": "25Go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 43,
+        "end": 47,
+        "confidence_entity": 0.6350102248410966,
+        "value": "25Go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "validité pack 200MO",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "200MO",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.8556656984413326,
+        "value": "200MO",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "veux activer forfait {hadra} 100 mo 10 min",
+    "entities": [
+      {
+        "start": 29,
+        "end": 35,
+        "value": "100 mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.9127782450974391,
+        "value": "100",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "quel étape suivre transférer park proche 440 Mo",
+    "entities": [
+      {
+        "start": 41,
+        "end": 44,
+        "value": "440",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 41,
+        "end": 47,
+        "confidence_entity": 0.7519751712459177,
+        "value": "440 Mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "comment activer pack {internet} 25GO",
+    "entities": [
+      {
+        "start": 32,
+        "end": 36,
+        "value": "25GO",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 32,
+        "end": 36,
+        "confidence_entity": 0.5244223889561908,
+        "value": "25GO",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "avoir actualisation pack 25",
+    "entities": [
+      {
+        "start": 25,
+        "end": 27,
+        "value": "25",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 25,
+        "end": 27,
+        "confidence_entity": 0.6190134465862361,
+        "value": "25",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "combien coute forfait {internet} 440Mo",
+    "entities": [
+      {
+        "start": 33,
+        "end": 38,
+        "value": "440Mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 33,
+        "end": 38,
+        "confidence_entity": 0.6464498267886605,
+        "value": "440Mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "prix forfait {facebok} 500 mo",
+    "entities": [
+      {
+        "start": 23,
+        "end": 26,
+        "value": "500",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.735145912653376,
+        "value": "500 mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "faire forfait {ehdia} 200mo",
+    "entities": [
+      {
+        "start": 22,
+        "end": 27,
+        "value": "200mo",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.5945450418487543,
+        "value": "200mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "coment transférer offrir {ehdia} 2,2Go",
+    "entities": [
+      {
+        "start": 33,
+        "end": 38,
+        "value": "2,2Go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 33,
+        "end": 38,
+        "confidence_entity": 0.792773442931385,
+        "value": "2,2Go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "forfait {ehdia} 200mo",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "200mo",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.5945450418572791,
+        "value": "200mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "veux opter offrir {internet} 10go",
+    "entities": [
+      {
+        "start": 29,
+        "end": 33,
+        "value": "10go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 29,
+        "end": 33,
+        "confidence_entity": 0.7422900364099019,
+        "value": "10go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "quel montant forfait {internet} 440mo",
+    "entities": [
+      {
+        "start": 32,
+        "end": 37,
+        "value": "440mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 32,
+        "end": 37,
+        "confidence_entity": 0.6306162681270566,
+        "value": "440mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "coment pouvoir transférer abonnement 200 mo vers proche",
+    "entities": [
+      {
+        "start": 37,
+        "end": 43,
+        "value": "200 mo",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 37,
+        "end": 40,
+        "confidence_entity": 0.7965912220881186,
+        "value": "200",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "{hadra} 2,5",
+    "entities": [
+      {
+        "start": 8,
+        "end": 11,
+        "value": "2,5",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "forf {internet} 1.1Go",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "1.1Go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.6693742672529593,
+        "value": "1.1Go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "offre {internet}  25",
+    "entities": [
+      {
+        "start": 18,
+        "end": 20,
+        "value": "25",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 18,
+        "end": 20,
+        "confidence_entity": 0.5489280555354855,
+        "value": "25",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "code devoir saisir forfait {internet} 10 GO",
+    "entities": [
+      {
+        "start": 38,
+        "end": 40,
+        "value": "10",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 38,
+        "end": 43,
+        "confidence_entity": 0.5356490576584926,
+        "value": "10 GO",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "combien devoir donner acheter forfait {internet} mobil 2.2 go",
+    "entities": [
+      {
+        "start": 55,
+        "end": 58,
+        "value": "2.2",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 59,
+        "end": 61,
+        "confidence_entity": 0.5939650213030181,
+        "value": "go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "forfait {ehdia} 2,2 go valable combien jour",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "2,2 go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "inscrire forfait {ehdianet} 2,2 go",
+    "entities": [
+      {
+        "start": 28,
+        "end": 31,
+        "value": "2,2",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "souhaite connaitre montant payer forfait {ehdia} 25go",
+    "entities": [
+      {
+        "start": 49,
+        "end": 53,
+        "value": "25go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 49,
+        "end": 53,
+        "confidence_entity": 0.7502754714533437,
+        "value": "25go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "forfait {ehdia} 25go",
+    "entities": [
+      {
+        "start": 16,
+        "end": 20,
+        "value": "25go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 16,
+        "end": 20,
+        "confidence_entity": 0.7502754714534278,
+        "value": "25go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "vouloir savoir comment activer forfait {internet} 2.2Go",
+    "entities": [
+      {
+        "start": 50,
+        "end": 55,
+        "value": "2.2Go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 50,
+        "end": 55,
+        "confidence_entity": 0.6308924381133808,
+        "value": "2.2Go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "mise jour offrir manuel automatique 200MO",
+    "entities": [
+      {
+        "start": 36,
+        "end": 41,
+        "value": "200MO",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 36,
+        "end": 41,
+        "confidence_entity": 0.6534199202045738,
+        "value": "200MO",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "temps offre 10go",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "10go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 12,
+        "end": 16,
+        "confidence_entity": 0.6653713258059261,
+        "value": "10go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "vouloir opter code activation abonnement {facebook} [500 mo]",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 53,
+        "end": 56,
+        "confidence_entity": 0.5662736881985366,
+        "value": "500",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "prix forfait 20min 2.5 go",
+    "entities": [
+      {
+        "start": 19,
+        "end": 25,
+        "value": "2.5 go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.5360705732230122,
+        "value": "2.5",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "{ehdia} 200 mo",
+    "entities": [
+      {
+        "start": 8,
+        "end": 14,
+        "value": "200 mo",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.6152689034098804,
+        "value": "200",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "coment fair souscrir formule {internet} 55 go",
+    "entities": [
+      {
+        "start": 40,
+        "end": 45,
+        "value": "55 go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 40,
+        "end": 42,
+        "confidence_entity": 0.9644858546898833,
+        "value": "55",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "forfait 25go renouvlable  nn",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "25go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.8916072734515619,
+        "value": "25go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "combien temp rester valable forfait 440Mo",
+    "entities": [
+      {
+        "start": 36,
+        "end": 41,
+        "value": "440Mo",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 36,
+        "end": 41,
+        "confidence_entity": 0.8991874774293979,
+        "value": "440Mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "code activation  forfait {facebook} 500 MO",
+    "entities": [
+      {
+        "start": 36,
+        "end": 42,
+        "value": "500 MO",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 36,
+        "end": 39,
+        "confidence_entity": 0.9112642470064608,
+        "value": "500",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "coment activer opitonon 15 min 1 go",
+    "entities": [
+      {
+        "start": 31,
+        "end": 35,
+        "value": "1 go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 31,
+        "end": 32,
+        "confidence_entity": 0.8683206431398844,
+        "value": "1",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "souhaite connaitre montant payer forfait {hadranet} 100 mo",
+    "entities": [
+      {
+        "start": 52,
+        "end": 58,
+        "value": "100 mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 52,
+        "end": 55,
+        "confidence_entity": 0.9123335427560229,
+        "value": "100",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "faire activer forfait {ehdianet} 1,1",
+    "entities": [
+      {
+        "start": 33,
+        "end": 36,
+        "value": "1,1",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "pouvoir dire combien devoir player abonnement {ehdia}  1,1Go",
+    "entities": [
+      {
+        "start": 55,
+        "end": 60,
+        "value": "1,1Go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 55,
+        "end": 60,
+        "confidence_entity": 0.9357955036101233,
+        "value": "1,1Go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "somme total donner forfait {ehdia} 10",
+    "entities": [
+      {
+        "start": 35,
+        "end": 37,
+        "value": "10",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 35,
+        "end": 37,
+        "confidence_entity": 0.9758829614499545,
+        "value": "10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "pack {ehdia} 10",
+    "entities": [
+      {
+        "start": 13,
+        "end": 15,
+        "value": "10",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 13,
+        "end": 15,
+        "confidence_entity": 0.9758829611091265,
+        "value": "10",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "pouvoir souscrir forf {internet} 200mo",
+    "entities": [
+      {
+        "start": 33,
+        "end": 38,
+        "value": "200mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 33,
+        "end": 38,
+        "confidence_entity": 0.6396326101161994,
+        "value": "200mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "quel total forfait {internet} 10go",
+    "entities": [
+      {
+        "start": 30,
+        "end": 34,
+        "value": "10go",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.6969380757163381,
+        "value": "10go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "combien durer pack 55 GO",
+    "entities": [
+      {
+        "start": 19,
+        "end": 21,
+        "value": "55",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 19,
+        "end": 24,
+        "confidence_entity": 0.49926821007288724,
+        "value": "55 GO",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "quel coad activation formul {hadra} 20 min 2.5",
+    "entities": [
+      {
+        "start": 43,
+        "end": 46,
+        "value": "2.5",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 36,
+        "end": 38,
+        "confidence_entity": 0.5601939052298652,
+        "value": "20",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "prix total {ehdia} 6go",
+    "entities": [
+      {
+        "start": 19,
+        "end": 22,
+        "value": "6go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.8141685991804447,
+        "value": "6go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "some pack {ehdia} 6GO",
+    "entities": [
+      {
+        "start": 18,
+        "end": 21,
+        "value": "6GO",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.8141685970654153,
+        "value": "6GO",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "forf {internet}  25",
+    "entities": [
+      {
+        "start": 17,
+        "end": 19,
+        "value": "25",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 17,
+        "end": 19,
+        "confidence_entity": 0.5268514280277097,
+        "value": "25",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "quel cod activation offrir {internet} 50 mo",
+    "entities": [
+      {
+        "start": 38,
+        "end": 43,
+        "value": "50 mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 38,
+        "end": 40,
+        "confidence_entity": 0.9470069004133246,
+        "value": "50",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "jusqu quand forfait valable 200mo",
+    "entities": [
+      {
+        "start": 28,
+        "end": 33,
+        "value": "200mo",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait_ehdia",
+        "start": 28,
+        "end": 33,
+        "confidence_entity": 0.4903307903037477,
+        "value": "200mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "activation forfait {hadranet} 100  mo",
+    "entities": [
+      {
+        "start": 30,
+        "end": 33,
+        "value": "100",
+        "entity": "forfait"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.961559423543503,
+        "value": "100",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "forfait",
+        "start": 35,
+        "end": 37,
+        "confidence_entity": 0.8808641308234729,
+        "value": "mo",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "souscrire forfait {ehdia} 6go GO",
+    "entities": [
+      {
+        "start": 26,
+        "end": 29,
+        "value": "6go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 26,
+        "end": 32,
+        "confidence_entity": 0.6670672758355445,
+        "value": "6go GO",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "montant devoir payer {ehdia} 2.2Go",
+    "entities": [
+      {
+        "start": 29,
+        "end": 34,
+        "value": "2.2Go",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 29,
+        "end": 34,
+        "confidence_entity": 0.9526340947441551,
+        "value": "2.2Go",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "pavk {ehdia} 6",
+    "entities": [
+      {
+        "start": 13,
+        "end": 14,
+        "value": "6",
+        "entity": "forfait_ehdia"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "forfait",
+        "start": 13,
+        "end": 14,
+        "confidence_entity": 0.858620575444254,
+        "value": "6",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]

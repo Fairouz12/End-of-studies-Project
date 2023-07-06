@@ -1,0 +1,160 @@
+version: "3.1"
+nlu:
+- intent: rien
+  examples: |
+    - tout va bien
+- intent: salutation
+  examples: |
+    - bonsoir
+- intent: confirmation
+  examples: |
+    - bien sur
+- intent: abonnement
+  examples: |
+    - offres forfaits disponibles
+- intent: numero_telephone_client
+  examples: |
+    - 92218033
+- intent: greet
+  examples: |
+    - slt
+- intent: merci
+  examples: |
+    - remercie
+- intent: inform_facebook
+  examples: |
+    - {facebook} [700Mo](forfait)
+- intent: suivi_bonus
+  examples: |
+    - est ce qu'il y'a de [bonus](type_request) dans mon telephone ?
+- intent: volume_data
+  examples: |
+    - j'aimerais connaître le [volume](type_request) de données utilisé sur mon forfait mobile.
+    - je souhaite savoir combien de mégaoctets j'avais.
+- intent: affirmation
+  examples: |
+    - tout à fait
+- intent: offre_facebook
+  examples: |
+    - vouloir savoir offre forfait facebook
+    - abonement facebook
+- intent: demander_forfait_actuel
+  examples: |
+    - quel formule [actuel](type_request)
+- intent: informations_sim
+  examples: |
+    - quelles sont les options disponibles sur ma puce télécom ?
+    - j'aimerais connaître les détails de ma carte sim, est-ce possible ?
+- intent: consulter_solde
+  examples: |
+    - consulter [solde](type_request) telephone
+    - quelle est mon [solde](type_request) ?
+- intent: goodbye
+  examples: |
+    - by
+- intent: refuser
+  examples: |
+    - Jamais
+    - nn
+- intent: inform
+  examples: |
+    - forfait {ehdia} [200mo](forfait_ehdia)
+    - forfait {ehdia} [25go](forfait_ehdia)
+- intent: inform_hadra
+  examples: |
+    - {hadra} [100](forfait)
+    - {hadra} [100mo](forfait)
+- intent: statut_offre
+  examples: |
+    - [statut](type_request)
+    - comment puis savoir si sim actif
+    - pouvoir confirmer carte sim activer
+- intent: prix_forfait_internet
+  examples: |
+    - combien coute forfait {internet} [440Mo](forfait)
+    - quel some abonnement {internet} [50](forfait) mo
+- intent: prix_forfait_facebook
+  examples: |
+    - prix abonnement {facebook} [500](forfait)
+    - vouloir savoir combien devoir débourser forfait {facebok} [700](forfait)
+- intent: prix_forfait_hadra
+  examples: |
+    - quel coût forfait {hadra} [1Go](forfait) 15 min
+    - voudrais savoir combien devoir débourser forfait [100Mo](forfait)
+    - quel cout forfait {hadra} [350mo](forfait)
+- intent: offre_hadra
+  examples: |
+    - quel opion abonnement hadra nat
+    - quel codec activation park {hadra} net
+    - donner informaiton forfait hadrer not
+- intent: activer_forfait_facebook
+  examples: |
+    - etape faire {facebook} [700Mo](forfait)
+    - interesse forfait {facebook} [700mo](forfait)
+- intent: activer_forfait_hadra
+  examples: |
+    - quel opération activation forfait {hadranet} [100MO](forfait) 10min
+    - quel étape suivre abonner offre {hadranet} [350mo](forfait)
+    - vouloir connaitre code d'activation {hadranet} [100Mo]
+- intent: activer_forfait_internet
+  examples: |
+    - vouloir savoir forfait {internet} [2.2Go](forfait)
+    - activation offre {internet} [6go](forfait)
+    - pouvoir souscrir forf {internet} [200mo](forfait)
+- intent: prix_forfait_ehdia
+  examples: |
+    - quel prix devoir payer obtenir abonnement forfait {ehdia} [10go](forfait_ehdia)
+    - pouvoir dire combien devoir payer forfait {ehdia} [200 MO](forfait_ehdia) mo
+    - souhaite connaitre montant payer forfait {ehdia} [25go](forfait_ehdia)
+- intent: offre_internet
+  examples: |
+    - comment pouvoir activer abonnement internet mobile
+    - comment pouvoir activer pack internet mobile
+    - interesser forfait internet mobile , pouvoir dire plus
+- intent: activer_forfait_ehdia
+  examples: |
+    - donner comment activer forfait {ehdia} [10Go](forfait_ehdia)
+    - coment transférer offrir {ehdia} [2,2Go](forfait_ehdia)
+    - activation forfait {ehdia} [440MO](forfait_ehdia)
+    - code activation option {ehdia} [25](forfait_ehdia)
+- intent: renouvellement_forfait
+  examples: |
+    - vouloir savoir si formule internet mobile renouvell manuellement
+    - forfait [440](forfait) renouv manuel ou auto
+    - savoir faire renouvellement forf [10go](forfait) manuel ou auto
+- intent: offre_ehdia
+  examples: |
+    - quelles sont vos offres {ehdia}
+    - offres forfaits {ehdia}
+    - expliquer offre {ehdia}
+    - vouloir information forfait interent {ehdia} nedd
+- intent: connaitre_prix
+  examples: |
+    - quel prix devoir payer
+    - combien elever coût forfait
+    - cout forfait
+    - pouvoir dire combien devoir payer forfait
+- intent: inform_inter
+  examples: |
+    - forfait iternet [50](forfait)
+    - forfait iternet [50mo](forfait)
+    - {internet} [6](forfait)
+    - offre [55](forfait)
+- intent: validité_forfait
+  examples: |
+    - duree forfait
+    - combien temp formule valid [50Mo](forfait)
+    - combien temps forfait disponible  [25 go](forfait)
+    - validité forfait
+    - combien durer pack [55](forfait) GO
+- intent: code_verification
+  examples: |
+    - ff6d67
+    - g4n5v2
+    - 2d1727
+    - ze12gh
+- regex: forfait
+  examples: |
+    - activer forfait 440MO
+    - faire offre 500 MO
+    - souscire forfait 200 mo

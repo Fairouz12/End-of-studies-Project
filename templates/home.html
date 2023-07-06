@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bienvenu à TTBOT</title>
+    <link rel="icon" href="{{ url_for('static', filename='telecom1.png') }}" type="image/x-icon">
+
+    <style>
+      body {
+        background-image: url("{{ url_for('static', filename='home_background.png') }}");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
+      .navbar {
+  background-color: transparent; /* supprimez la couleur de fond existante */
+  position: absolute; /* position absolue pour recouvrir le fond d'écran */
+  top: 5%; /* aligner en haut de la page */
+  width: 100%; /* prendre toute la largeur de la page */
+  z-index: 1; /* placer le navbar en haut de la pile de calques */
+}
+
+      .navbar a {
+        color: rgb(0, 162, 255);
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 20px;
+        padding: 15px 15px;
+        top: 50%;
+        font-family: "Gill Sans", sans-serif;
+        float: right;
+      }
+      .logo {
+        background-color: transparent;
+        float: left;
+        margin-left: 20px;
+        width: 7%;
+        position: fixed;
+       
+      }
+      .content {
+        position: fixed;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        font-family: "Gill Sans", sans-serif;
+        width : 25% ; 
+
+      }
+      .aide {
+        position: fixed;
+        top: 60%;
+        left: 50px;
+        transform: translateY(-70%);
+        color: white;
+        font-size: 10px;
+        text-align: left;
+       font-weight: bold;
+        width : 11% ; 
+        justify-content: start;
+      }
+      button {
+        border: 2px solid rgb(0, 162, 255);
+        padding: 10px 20px;
+        background-color:transparent;
+        color: rgb(0, 162, 255);
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        align-items: center;
+        align-content: center;
+        
+      }
+      .content p {
+        text-align: justify;
+        }
+        #chatbot-container{
+  width: 95%;  
+  padding: 3px 10px;
+  align-items: center;
+  font-size: 17px;
+  justify-content: flex-start;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;   
+  max-width: 370px;
+  max-height: 80px;
+  position: fixed;
+  right: 20px;
+ 
+}
+
+#confirmation-dialog {
+  
+  width: 20%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0dcdc;
+  border: rgb(21, 50, 97) solid 2px ;
+  border-radius: 10px;
+ font-size: 14px;
+ color :rgb(21, 50, 97);
+ float: right;
+ margin-right: 20px;
+ margin-bottom: 80px;
+ margin-top: 16%;
+ position: relative;
+  z-index: 9999;
+}
+
+#show-chatbot-again-btn{
+  background-color: rgba(28, 41, 161, 0.644);
+  align-items: center;
+  
+  position: absolute; /* fixe le bouton à l'écran */
+  bottom: 20px; /* déplace le bouton en bas de la page */
+  right: 20px; /* déplace le bouton à droite de la page */
+   /* supprime la marge par défaut du bouton */
+  
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(21, 50, 97);
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+    </style>
+  </head>
+  <body>
+  
+
+    <div class="navbar">
+      <div>
+        <a href="https://www.tunisietelecom.tn/Fr/Particulier/A-Propos">À propos</a>
+        <a href="https://www.tunisietelecom.tn/Fr/Particulier/Assistance">Assistance</a>
+        <a href="#">Accueil</a>
+        <img src="{{ url_for('static', filename='telecom1.png') }}" alt="mon_logo" class="logo">
+      </div>
+    </div>
+    <div class = "aide">
+      <p> <img src="{{ url_for('static', filename='aide.png') }}" alt="icone" class="icone" width="35" style=" margin-bottom: -9px;"> Aide 24/7 </p> 
+      <p><img src="{{ url_for('static', filename='details.png') }}" alt="icone" class="icone" width="24"> Récupérez les détails de votre corte SIM.</p>
+      <p><img src="{{ url_for('static', filename='internet.png') }}" alt="icone" class="icone" width="25 ">Découvrir nos forfaits internet mobile disponible</p>
+    </div>
+
+    <div class="content">
+     
+     
+      <p>
+        Le chatbot TTBOT est un assistant virtuel doté d'une intelligence artificielle qui permet de répondre instantanément à toutes les demandes de nos clients.
+      </p>
+      <p>
+        Que vous ayez besoin de connaître nos différents forfaits mobiles, de consulter votre solde, ou encore de souscrire à une offre spécifique, notre TTBOT est là pour vous guider et vous accompagner tout au long de votre parcours.
+      </p>
+      <p>
+        Avec son approche personnalisée et ses réponses rapides et précises, notre TTBOT est le partenaire idéal pour vous simplifier la vie au quotidien et vous offrir une expérience client exceptionnelle.
+      </p>
+      <button id="show-chatbot-btn">Accéder à TTBOT</button>
+    
+    </div>
+    <div id="chatbot-container">
+
+    </div>
+    <div id="confirmation-dialog" style="display: none;">
+      <p>Êtes-vous sûr de vouloir fermer le chatbot ?</p>
+      <button class="b1" onclick="hideConfirmationDialog()">Annuler</button>
+      <button class="b2" onclick="hideChatbotFermer()">Fermer</button>
+    </div>
+    <div>
+      <button id="show-chatbot-again-btn" style="display:none;">
+        <img src="{{ url_for('static', filename='robot_icon2.png') }}" alt="icone" class="icone" width="30" style=" left: 50%; transform: translateX(10%); margin-bottom: 10px;">
+      
+      </button>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+     $(document).ready(function() {
+      
+  // Masquer le conteneur du chatbot initialement
+  $('#chatbot-container').hide();
+
+  // Afficher le chatbot quand on clique sur le premier bouton
+  $('#show-chatbot-btn').click(function() {
+    
+    $.ajax({
+      url: '/get_chatbot', // L'URL de la route Flask pour récupérer le contenu HTML du chatbot
+      success: function(data) {
+       
+        $('#chatbot-container').html(data); // Ajouter le contenu HTML dans le conteneur
+        $('#chatbot-container').show(); // Afficher le conteneur du chatbot
+        $('.content').hide(); // Masquer le contenu
+        $('#show-chatbot-again-btn').hide();
+      
+      }
+    });
+  });
+
+  // Fonction pour masquer le chatbot
+  function hideChatbot() {
+   
+    $('#chatbot-container').hide(); // Masquer le conteneur du chatbot
+    $('#show-chatbot-again-btn').show(); // Afficher le bouton pour afficher à nouveau le chatbot
+    $('.content').show(); // Afficher le contenu
+   
+    
+  }
+
+  // Fonction pour afficher à nouveau le chatbot
+  $('#show-chatbot-again-btn').click(function() {
+    $('#chatbot-container').show(); // Afficher le conteneur du chatbot
+    $('#show-chatbot-again-btn').hide(); // Masquer le bouton pour afficher à nouveau le chatbot
+    $('.content').hide(); // Masquer le contenu
+    
+  });
+
+  // Fonction pour fermer le chatbot
+  $('#chatbot-close-btn').click(function() {
+    $('#chatbot-container').hide(); // Masquer le conteneur du chatbot
+    $('#show-chatbot-again-btn').hide(); // Masquer le bouton pour afficher à nouveau le chatbot
+    $('.content').show(); // Afficher le contenu
+   
+  });
+});
+
+    </script>
+    
+  </body>
+  
+</html>

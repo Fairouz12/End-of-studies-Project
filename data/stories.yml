@@ -1,0 +1,190 @@
+version: "3.1"
+
+stories:
+- story : parler avec l'assistant technique
+  steps : 
+  - intent : assistance_technique
+  - action : utter_assistance_technique
+
+- story: activer forfait internet 
+  steps:
+  - intent : offre_internet
+  - action : utter_offre_internet
+  - intent: activer_forfait_internet
+  - action : get_forfait
+  - action: get_code_acces
+  - action: utter_activer_forfait_internet
+
+
+- story : toutes les forfaits internet 
+  steps : 
+  - intent : presenter_les_fonctionnalités 
+  - action : utter_info 
+
+- story: offre forfait internet 
+  steps:
+  - intent : offre_internet
+  - action : utter_offre_internet
+
+
+- story : offre_forfait_facebook
+  steps: 
+  - intent : offre_facebook
+  - action : utter_offre_facebook
+
+- story : offre_ehdia net
+  steps: 
+  - intent : offre_ehdia
+  - action : utter_offre_ehdia
+
+- story : offre_forfait_hadra
+  steps: 
+  - intent : offre_hadra
+  - action : utter_offre_hadra
+##########################################
+- story: Accéder au forfait internet
+  steps:
+  - intent: activer_forfait_internet
+  - action : get_forfait
+  - action: get_code_acces
+  - action: utter_activer_forfait_internet
+  - action : utter_pose_question
+  
+
+  
+
+- story : renouvellement de forfait path 1
+  steps:
+  - intent : renouvellement_forfait
+  - action: get_forfait
+  - action : get_renouvel
+ 
+
+
+- story : prix de forfait internet
+  steps:
+  - intent : prix_forfait_internet
+  - action: get_forfait
+  - action : get_price
+
+
+- story : validité de forfait  path1
+  steps:
+  - intent : validité_forfait
+  - action : get_forfait
+  - action : get_temps
+ 
+
+########################Facebook ###########
+
+- story: Accéder au forfait facebook
+  steps:
+  - intent: activer_forfait_facebook
+  - action: get_forfait
+  - action: get_code_f
+  - action: utter_activer_forfait_facebook
+  - action : utter_pose_question
+
+
+- story : prix de forfait facebook
+  steps:
+  - intent : prix_forfait_facebook
+  - action: get_forfait
+  - action : get_price
+ 
+ 
+################################ Hadra NET 
+- story: Accéder au forfait hadra
+  steps:
+  - intent: activer_forfait_hadra
+  - action: get_forfait
+  - action : get_duree
+  - action: get_code_hadra
+  - action: utter_activer_forfait_hadra
+  - action : utter_pose_question_hadra
+
+- story : prix de forfait hadra
+  steps:
+  - intent : prix_forfait_hadra
+  - action: get_forfait
+  - action : get_duree
+  - action : get_price
+  
+
+####################################EHDIA NET #####################
+
+
+- story: Accéder au forfait ehdia net
+  steps:
+  - intent: activer_forfait_ehdia
+  - action: get_forfait_ehdia
+  - action: get_code_ehdia
+  - action: utter_activer_forfait_ehdia
+  - action : utter_pose_question_ehdia 
+
+- story: renouvellement forfait ehdia net 
+  steps:
+  - intent: activer_forfait_ehdia
+  - action: get_forfait_ehdia
+  - action: get_code_ehdia
+  - action: utter_activer_forfait_ehdia
+  - action : utter_pose_question_ehdia 
+  - intent : renouvellement_forfait
+  - action : utter_renouvellement_forfait_ehdia
+
+- story: renouvellement forfait ehdia net  path 2 
+  steps:
+  - intent: activer_forfait_ehdia
+  - action: get_forfait_ehdia
+  - action: get_code_ehdia
+  - action: utter_activer_forfait_ehdia
+  - action : utter_pose_question_ehdia 
+  - intent : validité_forfait
+  - action : get_temps
+  - intent : renouvellement_forfait
+  - action : utter_renouvellement_forfait_ehdia
+
+
+- story : prix de forfait ehdia
+  steps:
+  - intent : prix_forfait_ehdia
+  - action : get_forfait_ehdia
+  - action : get_price_ehdia
+  - action : utter_prix_forfait_ehdia
+ 
+
+
+#####################################################################################################
+- story : information de sim path 1
+  steps:
+  - intent : informations_sim
+  - action : utter_verification_identite
+  - intent : numero_telephone_client
+  - action : action_get_numero_appel
+  - intent: code_verification
+  - action : action_get_client_details
+  - intent : demander_forfait_actuel
+  - action : action_get_info
+  - intent : statut_offre
+  - action : action_get_info
+  - intent : consulter_solde
+  - action : action_get_info
+  - intent : suivi_bonus
+  - action : action_get_info
+  - intent : volume_data
+  - action : action_get_info
+ 
+
+- story: numero_telephone et code 
+  steps:
+  - intent: numero_telephone_client
+  - action: action_get_numero_appel  
+  - intent: code_verification
+  - action: action_get_client_details
+
+- story : out_of_scope
+  steps:
+  - intent : out_of_scope
+  - action : utter_default
+
+ 

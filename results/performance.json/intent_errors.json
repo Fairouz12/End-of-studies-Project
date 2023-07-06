@@ -1,0 +1,106 @@
+[
+  {
+    "text": "comment aller",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.34558889269828796
+    }
+  },
+  {
+    "text": "pack {facebook} 500mo",
+    "intent": "inform_facebook",
+    "intent_prediction": {
+      "name": "prix_forfait_facebook",
+      "confidence": 0.34297025203704834
+    }
+  },
+  {
+    "text": "forf {facebook} 500",
+    "intent": "inform_facebook",
+    "intent_prediction": {
+      "name": "prix_forfait_facebook",
+      "confidence": 0.28417855501174927
+    }
+  },
+  {
+    "text": "{facebook} 700Mo",
+    "intent": "inform_facebook",
+    "intent_prediction": {
+      "name": "prix_forfait_facebook",
+      "confidence": 0.3705589473247528
+    }
+  },
+  {
+    "text": "forfait {facebook} 700",
+    "intent": "inform_facebook",
+    "intent_prediction": {
+      "name": "prix_forfait_facebook",
+      "confidence": 0.319085031747818
+    }
+  },
+  {
+    "text": "abonnement {facebook} 500",
+    "intent": "inform_facebook",
+    "intent_prediction": {
+      "name": "prix_forfait_facebook",
+      "confidence": 0.5399588346481323
+    }
+  },
+  {
+    "text": "je veux voyager",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "merci",
+      "confidence": 0.0689917802810669
+    }
+  },
+  {
+    "text": "blablablabla",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "merci",
+      "confidence": 0.08135130256414413
+    }
+  },
+  {
+    "text": "quelle est l'heure actuelle ?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "merci",
+      "confidence": 0.0843181237578392
+    }
+  },
+  {
+    "text": "c'est quoi ça",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "merci",
+      "confidence": 0.0676143690943718
+    }
+  },
+  {
+    "text": "internet",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "offre_internet",
+      "confidence": 0.4605180621147156
+    }
+  },
+  {
+    "text": "manger",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "merci",
+      "confidence": 0.06528531014919281
+    }
+  },
+  {
+    "text": "9la9t",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "merci",
+      "confidence": 0.08498214185237885
+    }
+  }
+]

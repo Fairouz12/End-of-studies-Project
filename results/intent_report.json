@@ -1,0 +1,342 @@
+{
+  "assistance_technique": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "offre_internet": {
+    "precision": 0.8571428571428571,
+    "recall": 0.9230769230769231,
+    "f1-score": 0.888888888888889,
+    "support": 13,
+    "confused_with": {
+      "activer_forfait_internet": 1
+    }
+  },
+  "numero_telephone_client": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "demander_forfait_actuel": {
+    "precision": 0.8888888888888888,
+    "recall": 1.0,
+    "f1-score": 0.9411764705882353,
+    "support": 8,
+    "confused_with": {}
+  },
+  "code_verification": {
+    "precision": 0.9642857142857143,
+    "recall": 0.9642857142857143,
+    "f1-score": 0.9642857142857143,
+    "support": 28,
+    "confused_with": {
+      "refuser": 1
+    }
+  },
+  "offre_hadra": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "statut_offre": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1-score": 0.888888888888889,
+    "support": 10,
+    "confused_with": {
+      "informations_sim": 1,
+      "suivi_bonus": 1
+    }
+  },
+  "informations_sim": {
+    "precision": 0.8,
+    "recall": 0.8,
+    "f1-score": 0.8000000000000002,
+    "support": 10,
+    "confused_with": {
+      "suivi_bonus": 1,
+      "activer_forfait_facebook": 1
+    }
+  },
+  "inform": {
+    "precision": 0.8181818181818182,
+    "recall": 0.9,
+    "f1-score": 0.8571428571428572,
+    "support": 10,
+    "confused_with": {
+      "activer_forfait_ehdia": 1
+    }
+  },
+  "inform_hadra": {
+    "precision": 0.9090909090909091,
+    "recall": 0.9090909090909091,
+    "f1-score": 0.9090909090909091,
+    "support": 11,
+    "confused_with": {
+      "prix_forfait_hadra": 1
+    }
+  },
+  "inform_inter": {
+    "precision": 0.8571428571428571,
+    "recall": 0.9473684210526315,
+    "f1-score": 0.9,
+    "support": 19,
+    "confused_with": {
+      "prix_forfait_internet": 1
+    }
+  },
+  "offre_facebook": {
+    "precision": 0.6666666666666666,
+    "recall": 0.5,
+    "f1-score": 0.5714285714285715,
+    "support": 8,
+    "confused_with": {
+      "activer_forfait_facebook": 2,
+      "prix_forfait_facebook": 1
+    }
+  },
+  "consulter_solde": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1-score": 0.8571428571428571,
+    "support": 8,
+    "confused_with": {
+      "volume_data": 2
+    }
+  },
+  "presenter_les_fonctionnalités": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {
+      "offre_ehdia": 1
+    }
+  },
+  "renouvellement_forfait": {
+    "precision": 1.0,
+    "recall": 0.9411764705882353,
+    "f1-score": 0.9696969696969697,
+    "support": 17,
+    "confused_with": {
+      "demander_forfait_actuel": 1
+    }
+  },
+  "activer_forfait_internet": {
+    "precision": 0.7647058823529411,
+    "recall": 0.8666666666666667,
+    "f1-score": 0.8125,
+    "support": 15,
+    "confused_with": {
+      "inform_inter": 1,
+      "offre_internet": 1
+    }
+  },
+  "abonnement": {
+    "precision": 1.0,
+    "recall": 0.4,
+    "f1-score": 0.5714285714285715,
+    "support": 5,
+    "confused_with": {
+      "connaitre_prix": 2,
+      "offre_ehdia": 1
+    }
+  },
+  "activer_forfait_hadra": {
+    "precision": 0.9,
+    "recall": 0.6428571428571429,
+    "f1-score": 0.75,
+    "support": 14,
+    "confused_with": {
+      "prix_forfait_hadra": 2,
+      "activer_forfait_ehdia": 1
+    }
+  },
+  "prix_forfait_internet": {
+    "precision": 0.6666666666666666,
+    "recall": 0.5454545454545454,
+    "f1-score": 0.6,
+    "support": 11,
+    "confused_with": {
+      "inform_inter": 2,
+      "connaitre_prix": 2
+    }
+  },
+  "activer_forfait_ehdia": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1-score": 0.75,
+    "support": 16,
+    "confused_with": {
+      "offre_ehdia": 2,
+      "prix_forfait_ehdia": 1
+    }
+  },
+  "suivi_bonus": {
+    "precision": 0.7777777777777778,
+    "recall": 0.875,
+    "f1-score": 0.823529411764706,
+    "support": 8,
+    "confused_with": {
+      "connaitre_prix": 1
+    }
+  },
+  "inform_facebook": {
+    "precision": 0.7,
+    "recall": 1.0,
+    "f1-score": 0.8235294117647058,
+    "support": 7,
+    "confused_with": {}
+  },
+  "prix_forfait_ehdia": {
+    "precision": 0.8666666666666667,
+    "recall": 0.8666666666666667,
+    "f1-score": 0.8666666666666667,
+    "support": 15,
+    "confused_with": {
+      "prix_forfait_facebook": 1,
+      "prix_forfait_internet": 1
+    }
+  },
+  "validité_forfait": {
+    "precision": 0.8888888888888888,
+    "recall": 0.96,
+    "f1-score": 0.923076923076923,
+    "support": 25,
+    "confused_with": {
+      "activer_forfait_ehdia": 1
+    }
+  },
+  "goodbye": {
+    "precision": 0.5714285714285714,
+    "recall": 0.4444444444444444,
+    "f1-score": 0.5,
+    "support": 9,
+    "confused_with": {
+      "activer_forfait_ehdia": 1,
+      "salutation": 1
+    }
+  },
+  "activer_forfait_facebook": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6153846153846154,
+    "f1-score": 0.64,
+    "support": 13,
+    "confused_with": {
+      "inform_facebook": 2,
+      "activer_forfait_hadra": 1
+    }
+  },
+  "prix_forfait_facebook": {
+    "precision": 0.7857142857142857,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.8461538461538461,
+    "support": 12,
+    "confused_with": {
+      "validité_forfait": 1
+    }
+  },
+  "salutation": {
+    "precision": 0.6666666666666666,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.4444444444444444,
+    "support": 6,
+    "confused_with": {
+      "goodbye": 2,
+      "code_verification": 1
+    }
+  },
+  "refuser": {
+    "precision": 0.875,
+    "recall": 0.7777777777777778,
+    "f1-score": 0.823529411764706,
+    "support": 9,
+    "confused_with": {
+      "prix_forfait_ehdia": 1,
+      "offre_ehdia": 1
+    }
+  },
+  "connaitre_prix": {
+    "precision": 0.7307692307692307,
+    "recall": 0.95,
+    "f1-score": 0.8260869565217392,
+    "support": 20,
+    "confused_with": {
+      "prix_forfait_internet": 1
+    }
+  },
+  "volume_data": {
+    "precision": 0.625,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.6666666666666666,
+    "support": 7,
+    "confused_with": {
+      "informations_sim": 1,
+      "validité_forfait": 1
+    }
+  },
+  "affirmation": {
+    "precision": 0.8,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.6666666666666666,
+    "support": 7,
+    "confused_with": {
+      "volume_data": 1,
+      "offre_facebook": 1
+    }
+  },
+  "merci": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {
+      "validité_forfait": 1
+    }
+  },
+  "offre_ehdia": {
+    "precision": 0.782608695652174,
+    "recall": 0.9473684210526315,
+    "f1-score": 0.8571428571428571,
+    "support": 19,
+    "confused_with": {
+      "inform": 1
+    }
+  },
+  "prix_forfait_hadra": {
+    "precision": 0.75,
+    "recall": 0.8181818181818182,
+    "f1-score": 0.7826086956521738,
+    "support": 11,
+    "confused_with": {
+      "prix_forfait_facebook": 1,
+      "inform_hadra": 1
+    }
+  },
+  "accuracy": 0.8361858190709046,
+  "macro avg": {
+    "precision": 0.8379988488757213,
+    "recall": 0.8027766139703334,
+    "f1-score": 0.8097129850014395,
+    "support": 409
+  },
+  "weighted avg": {
+    "precision": 0.8401619685544672,
+    "recall": 0.8361858190709046,
+    "f1-score": 0.8309145785860091,
+    "support": 409
+  },
+  "micro avg": {
+    "precision": 0.8361858190709046,
+    "recall": 0.8361858190709046,
+    "f1-score": 0.8361858190709046,
+    "support": 409
+  }
+}

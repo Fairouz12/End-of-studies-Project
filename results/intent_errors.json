@@ -1,0 +1,538 @@
+[
+  {
+    "text": "hi",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "code_verification",
+      "confidence": 0.4179951250553131
+    }
+  },
+  {
+    "text": "revoir",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "connaitre_prix",
+      "confidence": 0.5495387315750122
+    }
+  },
+  {
+    "text": "prochain",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "activer_forfait_ehdia",
+      "confidence": 0.587589681148529
+    }
+  },
+  {
+    "text": "quel étape suivre abonner offre {hadranet} 350mo",
+    "intent": "activer_forfait_hadra",
+    "intent_prediction": {
+      "name": "activer_forfait_ehdia",
+      "confidence": 0.526665210723877
+    }
+  },
+  {
+    "text": "prix forf {internet} 1,1Go",
+    "intent": "inform_inter",
+    "intent_prediction": {
+      "name": "prix_forfait_internet",
+      "confidence": 0.4208083748817444
+    }
+  },
+  {
+    "text": "coucou",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "connaitre_prix",
+      "confidence": 0.7002950310707092
+    }
+  },
+  {
+    "text": "offres forfaits disponibles",
+    "intent": "abonnement",
+    "intent_prediction": {
+      "name": "offre_ehdia",
+      "confidence": 0.28661397099494934
+    }
+  },
+  {
+    "text": "A bientot",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirmation",
+      "confidence": 0.7113379836082458
+    }
+  },
+  {
+    "text": "plus tard",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "offre_internet",
+      "confidence": 0.2339513897895813
+    }
+  },
+  {
+    "text": "cout forfait {internet} 55 Go",
+    "intent": "prix_forfait_internet",
+    "intent_prediction": {
+      "name": "inform_inter",
+      "confidence": 0.5563770532608032
+    }
+  },
+  {
+    "text": "debourser somme obtenir forfait {internet} 25Go",
+    "intent": "prix_forfait_internet",
+    "intent_prediction": {
+      "name": "connaitre_prix",
+      "confidence": 0.370895117521286
+    }
+  },
+  {
+    "text": "forfait {ehdia} 2,2 go valable combien jour",
+    "intent": "validité_forfait",
+    "intent_prediction": {
+      "name": "activer_forfait_ehdia",
+      "confidence": 0.2920425832271576
+    }
+  },
+  {
+    "text": "acceder forfait {facebook} 500Mo",
+    "intent": "activer_forfait_facebook",
+    "intent_prediction": {
+      "name": "inform_facebook",
+      "confidence": 0.543526291847229
+    }
+  },
+  {
+    "text": "vouloir connaitre code d'activation {hadranet} [100Mo]",
+    "intent": "activer_forfait_hadra",
+    "intent_prediction": {
+      "name": "activer_forfait_facebook",
+      "confidence": 0.4168744683265686
+    }
+  },
+  {
+    "text": "quel cout forfait {hadra} 350mo",
+    "intent": "prix_forfait_hadra",
+    "intent_prediction": {
+      "name": "inform_hadra",
+      "confidence": 0.3485105037689209
+    }
+  },
+  {
+    "text": "coment transférer offrir {ehdia} 2,2Go",
+    "intent": "activer_forfait_ehdia",
+    "intent_prediction": {
+      "name": "offre_ehdia",
+      "confidence": 0.8007376790046692
+    }
+  },
+  {
+    "text": "combien coute offre",
+    "intent": "connaitre_prix",
+    "intent_prediction": {
+      "name": "prix_forfait_internet",
+      "confidence": 0.5164976119995117
+    }
+  },
+  {
+    "text": "paslfx",
+    "intent": "code_verification",
+    "intent_prediction": {
+      "name": "refuser",
+      "confidence": 0.5033716559410095
+    }
+  },
+  {
+    "text": "j'aimerais savoir s'il me reste assez d'argent dans mon telephone",
+    "intent": "consulter_solde",
+    "intent_prediction": {
+      "name": "volume_data",
+      "confidence": 0.5875892043113708
+    }
+  },
+  {
+    "text": "salut",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.2628340423107147
+    }
+  },
+  {
+    "text": "donner details forfaits",
+    "intent": "abonnement",
+    "intent_prediction": {
+      "name": "connaitre_prix",
+      "confidence": 0.19038410484790802
+    }
+  },
+  {
+    "text": "bien entendre",
+    "intent": "affirmation",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.47003433108329773
+    }
+  },
+  {
+    "text": "activation pack internet",
+    "intent": "offre_internet",
+    "intent_prediction": {
+      "name": "activer_forfait_internet",
+      "confidence": 0.807556688785553
+    }
+  },
+  {
+    "text": "abonement facebook",
+    "intent": "offre_facebook",
+    "intent_prediction": {
+      "name": "inform_facebook",
+      "confidence": 0.6133173704147339
+    }
+  },
+  {
+    "text": "avoir actualisation pack 25",
+    "intent": "renouvellement_forfait",
+    "intent_prediction": {
+      "name": "demander_forfait_actuel",
+      "confidence": 0.4595150351524353
+    }
+  },
+  {
+    "text": "quel codec activation abonnement internert 350mo",
+    "intent": "activer_forfait_hadra",
+    "intent_prediction": {
+      "name": "activer_forfait_internet",
+      "confidence": 0.32336121797561646
+    }
+  },
+  {
+    "text": "souhaite connaître coût park {ehdia} 440MO",
+    "intent": "prix_forfait_ehdia",
+    "intent_prediction": {
+      "name": "prix_forfait_facebook",
+      "confidence": 0.3575109839439392
+    }
+  },
+  {
+    "text": "forfait {ehdia} 25go",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "activer_forfait_ehdia",
+      "confidence": 0.29592353105545044
+    }
+  },
+  {
+    "text": "je veux acceder aux données de mon SIM",
+    "intent": "informations_sim",
+    "intent_prediction": {
+      "name": "activer_forfait_facebook",
+      "confidence": 0.3856778144836426
+    }
+  },
+  {
+    "text": "je veux consulter les info d'un autre compte",
+    "intent": "informations_sim",
+    "intent_prediction": {
+      "name": "suivi_bonus",
+      "confidence": 0.6246942281723022
+    }
+  },
+  {
+    "text": "combien avoir bonus  ?",
+    "intent": "suivi_bonus",
+    "intent_prediction": {
+      "name": "connaitre_prix",
+      "confidence": 0.3599260449409485
+    }
+  },
+  {
+    "text": "combien reste de Mo pour mon forfait",
+    "intent": "volume_data",
+    "intent_prediction": {
+      "name": "validité_forfait",
+      "confidence": 0.41305893659591675
+    }
+  },
+  {
+    "text": "bonsoir",
+    "intent": "salutation",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.43029963970184326
+    }
+  },
+  {
+    "text": "Quels sont vos produits ou services ?",
+    "intent": "presenter_les_fonctionnalités",
+    "intent_prediction": {
+      "name": "offre_ehdia",
+      "confidence": 0.29026496410369873
+    }
+  },
+  {
+    "text": "quelles options fournir",
+    "intent": "abonnement",
+    "intent_prediction": {
+      "name": "connaitre_prix",
+      "confidence": 0.09982761740684509
+    }
+  },
+  {
+    "text": "exactement",
+    "intent": "affirmation",
+    "intent_prediction": {
+      "name": "offre_facebook",
+      "confidence": 0.10760330408811569
+    }
+  },
+  {
+    "text": "impossible",
+    "intent": "refuser",
+    "intent_prediction": {
+      "name": "offre_ehdia",
+      "confidence": 0.15410782396793365
+    }
+  },
+  {
+    "text": "vouloir savoir offre forfait facebook",
+    "intent": "offre_facebook",
+    "intent_prediction": {
+      "name": "prix_forfait_facebook",
+      "confidence": 0.4827706217765808
+    }
+  },
+  {
+    "text": "activer forfait {internet} 50Mo",
+    "intent": "activer_forfait_internet",
+    "intent_prediction": {
+      "name": "inform_inter",
+      "confidence": 0.34510424733161926
+    }
+  },
+  {
+    "text": "comment activer pack {internet} 25GO",
+    "intent": "activer_forfait_internet",
+    "intent_prediction": {
+      "name": "offre_internet",
+      "confidence": 0.9364954233169556
+    }
+  },
+  {
+    "text": "quel total forfait {internet} 10go",
+    "intent": "prix_forfait_internet",
+    "intent_prediction": {
+      "name": "inform_inter",
+      "confidence": 0.28121230006217957
+    }
+  },
+  {
+    "text": "prix forfait devoir  payer {internet} 50",
+    "intent": "prix_forfait_internet",
+    "intent_prediction": {
+      "name": "connaitre_prix",
+      "confidence": 0.3919256031513214
+    }
+  },
+  {
+    "text": "etape faire {facebook} 700Mo",
+    "intent": "activer_forfait_facebook",
+    "intent_prediction": {
+      "name": "inform_facebook",
+      "confidence": 0.6488209962844849
+    }
+  },
+  {
+    "text": "veux savoir quelles étapes suivre activer forfait facebook [700mo]",
+    "intent": "activer_forfait_facebook",
+    "intent_prediction": {
+      "name": "activer_forfait_hadra",
+      "confidence": 0.38130393624305725
+    }
+  },
+  {
+    "text": "souhaite souscrir forfait {hadra} 350Mo 15min",
+    "intent": "activer_forfait_hadra",
+    "intent_prediction": {
+      "name": "prix_forfait_hadra",
+      "confidence": 0.7145604491233826
+    }
+  },
+  {
+    "text": "quel coad activation formul {hadra} 20 min 2.5",
+    "intent": "activer_forfait_hadra",
+    "intent_prediction": {
+      "name": "prix_forfait_hadra",
+      "confidence": 0.7356326580047607
+    }
+  },
+  {
+    "text": "faire forfait {ehdia} 200mo",
+    "intent": "activer_forfait_ehdia",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5339928269386292
+    }
+  },
+  {
+    "text": "pack {hadra} 350Mo",
+    "intent": "inform_hadra",
+    "intent_prediction": {
+      "name": "prix_forfait_hadra",
+      "confidence": 0.4347129464149475
+    }
+  },
+  {
+    "text": "pouvoir confirmer carte sim activer",
+    "intent": "statut_offre",
+    "intent_prediction": {
+      "name": "informations_sim",
+      "confidence": 0.8929353356361389
+    }
+  },
+  {
+    "text": "comment puis vérifier statut formule",
+    "intent": "statut_offre",
+    "intent_prediction": {
+      "name": "suivi_bonus",
+      "confidence": 0.5935708284378052
+    }
+  },
+  {
+    "text": "j'aimerais connaître le volume de données utilisé sur mon forfait mobile.",
+    "intent": "volume_data",
+    "intent_prediction": {
+      "name": "informations_sim",
+      "confidence": 0.5773532390594482
+    }
+  },
+  {
+    "text": "by",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "salutation",
+      "confidence": 0.30111244320869446
+    }
+  },
+  {
+    "text": "absolument",
+    "intent": "affirmation",
+    "intent_prediction": {
+      "name": "volume_data",
+      "confidence": 0.7015999555587769
+    }
+  },
+  {
+    "text": "Pas du tout",
+    "intent": "refuser",
+    "intent_prediction": {
+      "name": "prix_forfait_ehdia",
+      "confidence": 0.2681208848953247
+    }
+  },
+  {
+    "text": "etre formidable",
+    "intent": "merci",
+    "intent_prediction": {
+      "name": "validité_forfait",
+      "confidence": 0.5635806918144226
+    }
+  },
+  {
+    "text": "souscrir forfait facebook",
+    "intent": "offre_facebook",
+    "intent_prediction": {
+      "name": "activer_forfait_facebook",
+      "confidence": 0.36289647221565247
+    }
+  },
+  {
+    "text": "activer forfait facebook",
+    "intent": "offre_facebook",
+    "intent_prediction": {
+      "name": "activer_forfait_facebook",
+      "confidence": 0.6949165463447571
+    }
+  },
+  {
+    "text": "combien devoir donner acheter forfait {internet} mobil 2.2 go",
+    "intent": "prix_forfait_internet",
+    "intent_prediction": {
+      "name": "activer_forfait_internet",
+      "confidence": 0.3957982659339905
+    }
+  },
+  {
+    "text": "offre forfait {facebook} 500mo disponible",
+    "intent": "activer_forfait_facebook",
+    "intent_prediction": {
+      "name": "offre_facebook",
+      "confidence": 0.8117090463638306
+    }
+  },
+  {
+    "text": "interesse forfait {facebook} 700mo",
+    "intent": "activer_forfait_facebook",
+    "intent_prediction": {
+      "name": "activer_forfait_internet",
+      "confidence": 0.5359848141670227
+    }
+  },
+  {
+    "text": "quel valeur devoir payer acheter forfait {facebook} 500Mo",
+    "intent": "prix_forfait_facebook",
+    "intent_prediction": {
+      "name": "validité_forfait",
+      "confidence": 0.45303285121917725
+    }
+  },
+  {
+    "text": "vouloir savoir combien devoir débourser formule {hadra} net 1",
+    "intent": "prix_forfait_hadra",
+    "intent_prediction": {
+      "name": "prix_forfait_facebook",
+      "confidence": 0.3399582505226135
+    }
+  },
+  {
+    "text": "savoir forfait {ehdia} disponible",
+    "intent": "offre_ehdia",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.22480233013629913
+    }
+  },
+  {
+    "text": "vouloir opter pack forfait {ehdia} net 25Go",
+    "intent": "activer_forfait_ehdia",
+    "intent_prediction": {
+      "name": "prix_forfait_ehdia",
+      "confidence": 0.44372788071632385
+    }
+  },
+  {
+    "text": "code taper obtenir forfait {ehdianet} 440Mo",
+    "intent": "activer_forfait_ehdia",
+    "intent_prediction": {
+      "name": "offre_ehdia",
+      "confidence": 0.3560241460800171
+    }
+  },
+  {
+    "text": "quel prix devoir payer obtenir abonnement forfait {ehdia} 10go",
+    "intent": "prix_forfait_ehdia",
+    "intent_prediction": {
+      "name": "prix_forfait_internet",
+      "confidence": 0.5170072913169861
+    }
+  },
+  {
+    "text": "je voudrais savoir le montant qu'il me reste à dépenser",
+    "intent": "consulter_solde",
+    "intent_prediction": {
+      "name": "volume_data",
+      "confidence": 0.4178589880466461
+    }
+  }
+]
