@@ -1,0 +1,364 @@
+version: "3.1"
+
+intents:
+  - greet
+  - salutation
+  - goodbye
+  - confirmation
+  - affirmation
+  - merci
+  - refuser
+  - rien
+  - offre_internet
+  - offre_facebook
+  - offre_hadra
+  - offre_ehdia
+  - activer_forfait_internet
+  - renouvellement_forfait
+  - prix_forfait_internet
+  - validité_forfait
+  - activer_forfait_facebook
+  - prix_forfait_facebook
+  - activer_forfait_hadra
+  - prix_forfait_hadra
+  - activer_forfait_ehdia
+  - prix_forfait_ehdia
+  - inform
+  - inform_facebook
+  - connaitre_prix
+  - inform_hadra
+  - inform_inter
+  - demander_forfait_actuel
+  - statut_offre
+  - numero_telephone_client
+  - code_verification
+  - abonnement
+  - informations_sim
+  - consulter_solde
+  - suivi_bonus
+  - volume_data
+  - out_of_scope
+  - presenter_les_fonctionnalités
+  - assistance_technique
+  - offre
+ 
+
+entities:
+  - forfait
+  - hadra
+  - hadranet
+  - ehdia
+  - ehdianet
+  - offre
+  - forfait_ehdia
+  - type_request
+  
+ 
+slots:
+  forfait:
+    type: text
+    mappings:
+    - type: from_entity 
+      entity: forfait
+  auth_code:
+    type: text
+    mappings:
+    - type : custom
+      action : action_get_numero_appel
+  auth_code2:
+    type: text
+    mappings:
+    - type : custom
+      action : action_get_client_details
+  numero_appel:
+    type: text
+    mappings:
+    - type : custom
+      action : action_get_numero_appel
+  type_request:
+    type: text
+    mappings:
+    - type : from_entity
+      entity : type_request
+  code_acces:
+    type: text
+    mappings:
+     - type: custom
+       action: get_code_acces
+  forfait_unit:
+    type: text
+    mappings:
+     - type: custom
+       action: get_code_acces
+  renouv:
+    type: text
+    mappings:
+     - type: custom
+       action: get_renouvel
+  price:
+    type: text
+    mappings:
+     - type: custom
+       action: get_price
+  price_remise:
+    type: text
+    mappings:
+     - type: custom
+       action: get_price
+  temps:
+    type: text
+    mappings:
+     - type: custom
+       action: get_temps
+  code_f:
+    type : text
+    mappings :
+    - type : custom
+      action : get_code_f 
+  pricef:
+    type : text
+    mappings : 
+    - type : custom
+      action : get_price
+  code_hadra : 
+    type : text
+    mappings : 
+    - type : custom
+      action : get_code_hadra
+  duree:
+    type: text
+    mappings:
+    - type : custom
+      action: get_duree
+  price_hadra:
+    type: text
+    mappings:
+     - type: custom
+       action: get_price
+  forfait_ehdia:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: forfait_ehdia
+  forfait_unite:
+    type: text
+    mappings:
+     - type: custom
+       action: get_forfait_ehdia
+  code_ehdia:
+    type: text
+    mappings:
+     - type: custom
+       action: get_code_ehdia
+  price_ehdia:
+    type: text
+    mappings:
+     - type: custom
+       action: get_price_ehdia
+  
+responses:
+  utter_assistance_technique : 
+  - text : "Pour contacter notre assistant technique vous pouvez taper 1298 ou bien le numéro +21671001298"
+  utter_abonnement:
+   - text : >
+      Nous proposons une large sélection de forfaits adaptés à vos besoins : 
+     buttons : 
+     - title : "Internet mobile"
+       payload: "/offre_internet"
+     - title : "Forfait Facebook"
+       payload : "/offre_facebook"
+     - title : "Forfait Hadra NET"
+       payload: "/offre_hadra"
+     - title : "Forfait Ehdia NET"
+       payload: "/offre_ehdia"
+  utter_greeting:
+  - text : "Bonjour et bienvenue sur Tunisie Télécom ! Je suis TTbot, votre assistant virtuel. "
+  utter_salutation:
+  - text : " Bonjour! comment puis-je vous aider aujourd'hui ? "
+  utter_info :
+  - text : > 
+      Je suis ravi de pouvoir vous aider et de vous accompagner à travers les différentes options disponibles : 
+    buttons : 
+    - title : "Forfaits internet mobile"
+      payload : "/abonnement"
+    - title : "Informations de votre SIM"
+      payload : "/informations_sim"
+    
+  utter_info_carte : 
+  - text : >
+      Les informations que vous pouvez consulter concernant votre carte SIM sont : 
+    buttons : 
+    - title : "Statut de votre SIM"
+      payload : '/statut_offre{{"type_request":"statut"}}'
+    - title : "Offre actuellement activée"
+      payload : '/demander_forfait_actuel{{"type_request":"actuel"}}'
+    - title: "Suivi solde"
+      payload : '/consulter_solde{{"type_request":"solde"}}'
+    - title: "Suivi bonus"
+      payload : '/suivi_bonus{{"type_request":"bonus"}}'
+    - title: "volume data"
+      payload : '/volume_data{{"type_request":"volume"}}'
+
+  
+  utter_goodbye : 
+  - text : "Bye Bye"
+  utter_merci:
+  - text: "De rien, c'est avec plaisir ! Est ce que vous avez d'autres questions ? "
+  utter_confirmation : 
+    - text : "Très bien, comment puis-je vous aider maintenant ?"
+  utter_aide: 
+  - text: "D'accord , n'hésitez pas à me poser d'autres questions si vous avez besoin de précisions ou d'informations supplémentaires !"
+  utter_rien :
+   - text : "Parfait !"
+  utter_question:
+  - text: "Qu-est-ce que vous voulez connaitre à propos ce sujet ?"
+  utter_demander_numero :
+  - text  : Pourriez-vous me donner votre numéro de téléphone pour que je puisse vous envoyer un code de vérification et confirmer votre identité ?"
+
+  utter_offre_internet :
+  - text : >
+       Avec Tunisie Télécom, naviguez sur internet en toute liberté aux forfaits disponibles via le code *140#.
+        Une panoplie d'options sont à votre disposition :
+    buttons : 
+       - title : "Internet Mobile 50Mo" 
+         payload: '/activer_forfait_internet{{"forfait":"50Mo"}}'
+       - title : "Internet Mobile 200Mo"
+         payload: '/activer_forfait_internet{{"forfait":"200Mo"}}'
+       - title : "Internet Mobile 440Mo"
+         payload: '/activer_forfait_internet{{"forfait":"440Mo"}}'
+       - title : "Internet Mobile 1,1Go"
+         payload: '/activer_forfait_internet{{"forfait":"1,1Go"}}'
+       - title : "Internet Mobile 2,2Go"
+         payload: '/activer_forfait_internet{{"forfait":"2,2Go"}}'
+       - title : "Internet Mobile 6Go"
+         payload: '/activer_forfait_internet{{"forfait":"6Go"}}'
+       - title : "Internet Mobile 10Go"
+         payload: '/activer_forfait_internet{{"forfait":"10Go"}}'
+       - title : "Internet Mobile 25Go"
+         payload: '/activer_forfait_internet{{"forfait":"25Go"}}'
+       - title : "Internet Mobile 55Go"
+         payload: '/activer_forfait_internet{{"forfait":"55Go"}}'
+            
+  utter_activer_forfait_internet:
+  - text: >
+        Si vous souhaitez bénéficier d'un forfait internet mobile de {forfait} {forfait_unit}, vous pouvez saisir le code {code_acces}.
+  utter_pose_question : 
+  - text : >
+        Souhaiteriez-vous des précisions sur ce forfait ?
+ 
+  utter_offre_facebook : 
+  - text : >
+        Avec Tunisie Télécom, vous pouvez activer un forfait facebook en tapant *182#. Nous avons deux forfaits facebook disponibles :
+    buttons : 
+      - title : "Forfait Facebook 500Mo" 
+        payload: '/activer_forfait_facebook{{"forfait":"500Mo"}}'
+      - title : "Forfait Facebook 700Mo " 
+        payload: '/activer_forfait_facebook{{"forfait":"700Mo"}}'
+  utter_renouvellement_forfait_ehdia : 
+  - text : "Le renouvellement de forfait Ehdia NET devra être effectué manuellement ."
+  utter_renouvellement_forfait:
+  - text : "Le forfait de {forfait} {forfait_unit} sera renouvelé {renouv} ."
+  - text : "Le renouvellement de forfait {forfait} {forfait_unit} devra être effectué {renouv} ."
+  utter_prix_forfait_internet:
+  - text : >
+      Le forfait internet mobile de {forfait} {forfait_unit} coûte normalement {price} DT, mais nous avons une offre spéciale pour vous ! 
+       En activant ce forfait via l'application MY TT, vous bénéficierez d'une remise de 5% soit {price_remise} DT seulement.
+  
+  utter_validité_forfait: 
+  - text : "Ce forfait est valable pendant {temps} "
+  - text : "La validité de ce forfait est {temps} "
+  utter_activer_forfait_facebook : 
+  - text : "Si vous souhaitez bénéficier d'un forfait Facebook de {forfait} {forfait_unit}, vous pouvez saisir le code{code_f}."
+  utter_prix_forfait_facebook : 
+  - text : "Le forfait facebook de {forfait} {forfait_unit} est proposé à un prix abordable de {pricef} DT. "
+  utter_forfait_hadra : 
+  - text : "Tunisie Télécom  propose un forfait HADRA NET qui vous permet de bénéficier d'un vaste choix d'options pour communiquer avec tous les opérateurs et naviguer sur Internet mobile à des prix réduits. "
+  utter_offre_hadra : 
+  - text : >
+         Pour souscrire au forfait HADRA NET , vous pouvez composer *140*7# ou *211#.
+          Les options disponibles sont :
+    buttons : 
+      - title : "Forfait HADRA NET de 10min + 100Mo"
+        payload: '/activer_forfait_hadra{{"forfait":"100Mo"}}'
+      - title : "Forfait HADRA NET de 15min + 350Mo"
+        payload: '/activer_forfait_hadra{{"forfait":"350Mo"}}'
+      - title : "Forfait HADRA NET de 15min + 1Go"
+        payload: '/activer_forfait_hadra{{"forfait":"1Go"}}'
+      - title : "Forfait HADRA NET de 20min + 2,5Go"
+        payload: '/activer_forfait_hadra{{"forfait":"2,5Go"}}'
+  utter_activer_forfait_hadra : 
+  - text : >
+        Vous pouvez activer l'option de {duree} d'appels + {forfait} {forfait_unit} de HADRA NET en tapant {code_hadra}.
+  utter_pose_question_hadra : 
+  - text : "Aimeriez-vous en savoir plus sur ce forfait ?"
+         
+  utter_prix_forfait_hadra:
+  - text : > 
+          Le forfait HADRA NET comprenant {duree} d'appels et {forfait} {forfait_unit} de données mobiles est vendu seulement à {price_hadra} DT.
+  
+  utter_offre_ehdia : 
+  - text : >
+        Avec le service Ehdia NET, vous pouvez acheter des forfaits pour vos proches ainsi que demander gratuitement un forfait Internet en cas de besoin via le code *140*7#.
+    buttons : 
+      - title : Ehdia Net 200Mo
+        payload: '/activer_forfait_ehdia{"forfait_ehdia":"200Mo"}'
+      - title : Ehdia Net 440Mo
+        payload: '/activer_forfait_ehdia{"forfait_ehdia":"440Mo"}'
+      - title : Ehdia Net 1,1Go
+        payload: '/activer_forfait_ehdia{"forfait_ehdia":"1,1Go"}'
+      - title : Ehdia Net 2,2Go
+        payload: '/activer_forfait_ehdia{"forfait_ehdia":"2,2Go"}'
+      - title : Ehdia Net 6Go
+        payload: '/activer_forfait_ehdia{"forfait_ehdia":"6Go"}'
+      - title : Ehdia Net 10Go
+        payload: '/activer_forfait_ehdia{"forfait_ehdia":"10Go"}'
+      - title : Ehdia Net 25Go
+        payload: '/activer_forfait_ehdia{"forfait_ehdia":"25Go"}'
+          
+  utter_pose_question_ehdia :
+  - text : "Souhaitez-vous obtenir davantage d'informations concernant cette offre ?"
+  utter_activer_forfait_ehdia :
+  - text : >
+          Pour bénéficier de l'offre Ehdia Net de {forfait_ehdia} {forfait_unite} , il vous suffit de composer {code_ehdia} sur votre appareil . 
+           
+  utter_prix_forfait_ehdia : 
+  - text : "Pour seulement {price_ehdia} DT, vous pouvez activer un forfait Ehdia NET de {forfait_ehdia} {forfait_unite} pour une autre ligne prépayé mobile ou clé de Tunisie Telecom."
+
+  utter_ask_forfait_type:
+  - text : "Pourriez-vous me préciser le type et le volume de forfait que vous souhaitez connaitre son prix ? "
+  
+  utter_verification_identite :
+  - text  : " Pourriez-vous me donner votre numéro de téléphone pour que je puisse vous envoyer un code de vérification et confirmer votre identité ? "
+  utter_default : 
+  - text : "Je suis désolé , je n'ai pas compris votre demande"
+  utter_question_quel_forfait : 
+  - text : "Quel est le forfait que vous souhaitez connaitre son renouvellement ? "
+actions:
+  - utter_activer_forfait_internet
+  - utter_activer_forfait_ehdia
+  - get_code_acces
+  - get_renouvel
+  - get_price
+  - get_temps
+  - get_code_f
+  - get_code_hadra
+  - get_duree
+  - get_code_ehdia
+  - get_forfait_ehdia
+  - get_price_ehdia
+  - get_forfait
+  - action_get_client_details
+  - action_get_numero_appel
+  - action_greet
+  - action_get_info
+  - action_info_carte
+  - action_default
+  
+ 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  events:
+    - ActionExecuted
+ 
