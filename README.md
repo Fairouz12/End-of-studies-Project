@@ -3,7 +3,7 @@
 # Introduction
 This project is a chatbot service client developed as part of my final year project. The chatbot is built using Rasa and NLP techniques and is designed to provide customer service support. This agent caters to customer needs regarding mobile internet packages, including inquiries about renewal, pricing, validity, etc. It also provides information related to customer accounts, such as balance verification and bonus tracking.Additionally, we integrated our conversational agent into a Flask application as the user interface.
 
-#Installation and configuration : 
+# Installation and configuration : 
 Follow these simple steps:
 
 - Install Rasa by following the instructions at Rasa Installation and Setup.  https://rasa.com/docs/rasa-x/installation-and-setup/
