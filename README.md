@@ -17,4 +17,6 @@ Follow these simple steps:
 OPTIONAL: If you find a file called actions.py in your template directory, run the command rasa run actions in a new terminal.
 Start talking to the bot in the terminal using the command rasa shell.
 
-
+## Here are a few examples of conversations between the chatbot user and the chatbot :
+![page1_chatbot](https://github.com/Fairouz12/End-of-studies-Project/assets/108431375/894c8c5b-c44b-4a33-89de-9bb1644938a5)
+ ![page2_chatbot](https://github.com/Fairouz12/End-of-studies-Project/assets/108431375/bcbd6795-0e32-48ef-9025-39e02ada5ceb)
