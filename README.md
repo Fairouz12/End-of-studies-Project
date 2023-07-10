@@ -17,4 +17,4 @@ Follow these simple steps:
 OPTIONAL: If you find a file called actions.py in your template directory, run the command rasa run actions in a new terminal.
 Start talking to the bot in the terminal using the command rasa shell.
 
-![Screenshot 1](C:\Users\ASUS\Desktop\Stage PFE\Latex images\page1_chatbot)
+
